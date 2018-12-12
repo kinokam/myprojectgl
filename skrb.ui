@@ -22,7 +22,7 @@
      <rect>
       <x>330</x>
       <y>0</y>
-      <width>121</width>
+      <width>151</width>
       <height>71</height>
      </rect>
     </property>
@@ -35,16 +35,16 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="text">
-     <string>Skrambl</string>
+     <string>Speedcube</string>
     </property>
    </widget>
    <widget class="QLabel" name="skrambl">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>119</y>
+      <y>160</y>
       <width>781</width>
-      <height>101</height>
+      <height>151</height>
      </rect>
     </property>
     <property name="font">
@@ -53,14 +53,17 @@
      </font>
     </property>
     <property name="text">
-     <string>sdfgsdfhsg</string>
+     <string>Skrambl</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>370</y>
+      <x>30</x>
+      <y>470</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -77,14 +80,19 @@
    <widget class="QLabel" name="timer">
     <property name="geometry">
      <rect>
-      <x>316</x>
-      <y>430</y>
+      <x>120</x>
+      <y>450</y>
       <width>141</width>
-      <height>81</height>
+      <height>71</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>Timer</string>
+     <string>0.00</string>
     </property>
    </widget>
   </widget>
