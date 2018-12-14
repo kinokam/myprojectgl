@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>804</width>
+    <width>1114</width>
     <height>696</height>
    </rect>
   </property>
@@ -20,9 +20,9 @@
    <widget class="QLabel" name="name">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>0</y>
-      <width>151</width>
+      <x>470</x>
+      <y>10</y>
+      <width>601</width>
       <height>71</height>
      </rect>
     </property>
@@ -39,11 +39,14 @@
     </property>
    </widget>
    <widget class="QLabel" name="skrambl">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>160</y>
-      <width>781</width>
+      <width>1091</width>
       <height>151</height>
      </rect>
     </property>
@@ -53,37 +56,19 @@
      </font>
     </property>
     <property name="text">
-     <string>Skrambl</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>470</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Time</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="timer">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>450</y>
-      <width>141</width>
-      <height>71</height>
+      <x>140</x>
+      <y>400</y>
+      <width>801</width>
+      <height>231</height>
      </rect>
     </property>
     <property name="font">
@@ -92,7 +77,26 @@
      </font>
     </property>
     <property name="text">
-     <string>0.00</string>
+     <string>Press Space</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>320</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GENERATE</string>
     </property>
    </widget>
   </widget>
@@ -101,7 +105,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>804</width>
+     <width>1114</width>
      <height>21</height>
     </rect>
    </property>
