@@ -21,13 +21,13 @@ class SKRAMBL(QMainWindow):
                         'R', 'R\'', 'R2',
                         'L', 'L\'', 'L2']
 
-        def skr_ambl(self):
-            n = random.randint(13, 25)
-            a = []
-            for i in range(n):
-                k = random.randint(0, len(self.code) - 1)
-                a.append(self.code[k])
-            self.sk = ('  '.join(a))
+
+        n = random.randint(13, 25)
+        a = []
+        for i in range(n):
+            k = random.randint(0, len(self.code) - 1)
+            a.append(self.code[k])
+        self.sk = ('  '.join(a))
 
         self.fl = True
 
@@ -42,7 +42,7 @@ class SKRAMBL(QMainWindow):
 
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_Space:
+        if event.key() == Qt.Key_S:
             if self.fl:
                 self.timer1.start(10)
                 self.time1 = time.time()
