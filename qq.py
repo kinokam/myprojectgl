@@ -11,6 +11,7 @@ class SKRAMBL(QMainWindow):
         uic.loadUi('skrb.ui', self)
         self.timer1 = QTimer()
 
+
         self.btn.clicked.connect(self.tablo1)
 
 
@@ -27,17 +28,26 @@ class SKRAMBL(QMainWindow):
         for i in range(n):
             k = random.randint(0, len(self.code) - 1)
             a.append(self.code[k])
-        self.sk = ('  '.join(a))
+        self.sk = (' '.join(a))
 
         self.fl = True
 
-        self.timer1.timeout.connect(self.tablo)
+        self.timer1.timeout.connect(self.tablo
 
 
     def tablo(self):
-        self.timer.setText(str(time.time() - self.time1))
+        self.timer.setText('{0:.2f}'.format(time.time() - self.time1))
+                 #поставь сдесь ^ количество знаков после запятой
 
     def tablo1(self):
+        n = random.randint(13, 25)
+        a = []
+        for i in range(n):
+            k = random.randint(0, len(self.code) - 1)
+            a.append(self.code[k])
+        self.sk = (' '.join(a))
+
+        self.fl = True
         self.skrambl.setText(self.sk)
 
 
